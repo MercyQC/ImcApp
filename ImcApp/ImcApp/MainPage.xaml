@@ -12,11 +12,13 @@
                 <Label Text="Proporcione el peso en kilogramos:" 
                    TextColor="Black" 
                    FontSize="Medium"/>
-                <Entry FontSize="Medium"/>
+                <Entry FontSize="Medium"
+                       x:Name="PesoEntry"/>
                 <Label Text="Proporcione la estatura en metros:" 
                    TextColor="Black" 
                    FontSize="Medium"/>
-                <Entry FontSize="Medium"/>
+                <Entry FontSize="Medium"
+                       x:Name="EstaturaEntry"/>
             </StackLayout>
 
         </Frame>
@@ -26,11 +28,15 @@
             <Button Text="Calcular"
                     FontSize="Body"
                     WidthRequest="130"
-                    Margin="8"/>
+                    Margin="8"
+                    x:Name="CalcularButton"
+                    Clicked="CalcularButton_Clicked"/>
             <Button Text="Limpiar"
                     FontSize="Body"
                     WidthRequest="130"
-                    Margin="8"/>
+                    Margin="8"
+                    x:Name="LimpiarButton"
+                    Clicked="LimpiarButton_Clicked"/>
         </StackLayout>
         <Frame BackgroundColor="#FFFFFF" 
                Padding="24" 
@@ -44,7 +50,8 @@
                 <Label Text="23.4567"
                        TextColor="Black"
                        FontSize="28" 
-                       HorizontalOptions="Center"/>
+                       HorizontalOptions="Center"
+                       x:Name="ImcLabel"/>
                 <Label Text="La situación nutricional de la persona es:"
                        HorizontalOptions="Center"
                        TextColor="Black"
@@ -52,7 +59,8 @@
                 <Label Text="Peso normal"
                        TextColor="Black"
                        FontSize="28"
-                       HorizontalOptions="Center"/>
+                       HorizontalOptions="Center"
+                       x:Name="SituacionNutricionalLabel"/>
             </StackLayout>
         </Frame>
 
